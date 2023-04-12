@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-hmxz
+  namespace: build-e2e-vmmc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:9c00c8bd85e4fc1dec8f04dcd3a8799ab84c0a723bfe3e95099aefee869378c0
+        name: my-python
+        resources: {}
+status: {}

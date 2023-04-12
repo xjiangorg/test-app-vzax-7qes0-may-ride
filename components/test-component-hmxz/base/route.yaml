@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: test-component-hmxz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test-component-hmxz
+    app.kubernetes.io/part-of: test-app-vzax
+  name: test-component-hmxz
+  namespace: build-e2e-vmmc-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: test-component-hmxz
+    weight: null
+status: {}

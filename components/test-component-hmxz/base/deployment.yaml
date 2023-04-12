@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-hmxz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:0b803a4e67334a2b88b1f5bfefdd78fb
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:9c00c8bd85e4fc1dec8f04dcd3a8799ab84c0a723bfe3e95099aefee869378c0
         name: my-python
         ports:
         - containerPort: 8081
